@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline-block Elements</title>
+    <style>
+        div {
+            background-color: crimson;
+            height: 300px;
+            width: 250px;
+            padding-top:30px ;
+            margin-top: 40px;
+        }
+        h1 {
+            background-color: cyan;
+            /*  for converting block to inline
+            display: inline;       */
+        }
+        h2 {
+            background-color: darkmagenta;
+        }
+        p {
+            background-color: darkorange;
+        }
+        span {
+            background-color: darkgreen;
+            /*height related style won't work when element is inline element. by converting it to inline-block or block. it will work.
+            height: 300px;
+            width: 250px;*/
+            /*for converting inline-block*/
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Argentina</h1>
+    <h1>Brasil</h1>
+    <h1>Colombia</h1>
+    <span>Leonel Messi</span>
+    <span>Ronaldo</span>
+    <span>neymar</span>
+    <a href="">youtube</a>
+    <a href="">facebook</a>
+    <a href="">linkedin</a>
+    <ul>
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+    </ul>
+    <div>
+        <h2>Room no-1</h2>
+        <p>here some members</p>
+    </div>
+    <div>
+        <h2>Room no-2</h2>
+        <p>here some members</p>
+    </div>
+    <div>
+        <h2>Room no-3</h2>
+        <p>here some members</p>
+    </div>
+
+</body>
+</html>

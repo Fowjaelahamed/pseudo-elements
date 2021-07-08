@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        /*adding pseudo classs*/
+        h1:hover {
+            background-color: darkorchid;
+        }
+        .middle:focus {
+            color: deepskyblue;
+            font-weight: 700;
+        }
+        a:visited {
+            color: chartreuse;
+        }
+        li:first-child {
+            color: coral;
+        }
+        li:last-child {
+           background-color: cornflowerblue;
+        }
+        li:nth-child(2n) {
+            color: crimson;
+        }
+        li:nth-child(2n+1) {
+            background-color: darkblue;
+        }
+        /*uses pseudo element. :: is used for pseudo element*/
+        h3::before {
+            content: 'Hello ';
+        }
+        h3::after {
+            content: ' lost';
+            background-color: darkgoldenrod;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>this is normal text.</h1>
+    <input type="text">
+    <input class="middle" type="text">
+    <input type="text"><br>
+    <a href="https://www.google.com/">google</a>
+    <a href="https://github.com/">github</a>
+    <a href="https://www.medium.com/">medium</a>
+    <br>
+    <h3>middile size header-1</h3>
+    <h3>middile size header-2</h3>
+    <h3>middile size header-3</h3>
+    <h3>middile size header-4</h3>
+    <h3>middile size header-5</h3>
+    <h3>middile size header-6</h3>
+    <ul>
+        <li>Messi</li>
+        <li>Ronaldo</li>
+        <li>neymar</li>
+        <li>pogba</li>
+        <li>bekham</li>
+        <li>ozil</li>
+    </ul>
+    
+</body>
+</html>
